@@ -1,0 +1,21 @@
+import java.util.*;
+public class hollowsquaresymbol
+{
+    public static void main(String args[])
+    {
+        int row,r,c,d;
+        int ascii=64;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter rows : ");
+        row = s.nextInt();
+        for(r = 1; r <= row ; r++)
+        {
+            for(c = 1; c <= row; c++)
+                if(r == 1 || r == row || c == 1 || c == row)
+                    System.out.print((char)(c+ascii)+" ");
+                else
+                    System.out.print("  ");
+            System.out.print("\n");
+        }
+    }
+}
